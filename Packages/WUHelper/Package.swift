@@ -3,19 +3,39 @@
 
 import PackageDescription
 
+let sharedSwiftSettings: [SwiftSetting] = [
+    .unsafeFlags([
+        "-Xfrontend",
+        "-warn-long-function-bodies=250",
+        "-Xfrontend",
+        "-warn-long-expression-type-checking=250",
+    ]),
+    .enableExperimentalFeature("AccessLevelOnImport"),
+]
+
 let package = Package(
     name: "WUHelper",
+    platforms: [.iOS(.v17), .macOS(.v14), 
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "WUHelper",
             targets: ["WUHelper"]),
     ],
+    dependencies: [
+        .package(path: "../WallpaperKit"),
+        .package(path: "../GachaKit"),
+        .package(path: "../WUKit"),
+        .package(url: "https://github.com/elai950/AlertToast", .upToNextMajor(from: "1.3.9")),
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "WUHelper"),
-
+            name: "PZHelper",
+            dependencies: [
+                .product(name: "AlertToast", package: "AlertToast"),
+                .product(name: "WuWaKit", package: "WUKit"),
+                .product(name: "GachaKit", package: "GachaKit"),
+                .product(name: "WallpaperKit", package: "WallpaperKit"),
+            ],
+            swiftSettings: sharedSwiftSettings
+        ),
     ]
 )
