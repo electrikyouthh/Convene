@@ -6,43 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		351447992C7C1AB60077A491 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3514477F2C7C1AB40077A491 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 351447862C7C1AB40077A491;
-			remoteInfo = "Convene: Wuwa";
+/* Begin PBXBuildFile section */
+		3557A4EF2C8313F800B895E6 /* WUHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557A4EE2C8313F800B895E6 /* WUHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3557A4DE2C83139600B895E6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		351447A32C7C1AB70077A491 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3514477F2C7C1AB40077A491 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 351447862C7C1AB40077A491;
-			remoteInfo = "Convene: Wuwa";
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		351447872C7C1AB40077A491 /* Convene: Wuwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Convene: Wuwa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		351447982C7C1AB60077A491 /* Convene: WuwaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Convene: WuwaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		351447A22C7C1AB70077A491 /* Convene: WuwaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Convene: WuwaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3557A4EE2C8313F800B895E6 /* WUHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WUHelper.swift; sourceTree = "<group>"; };
+		3557A4F12C83150600B895E6 /* Convene: Wuwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Convene: Wuwa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		351447892C7C1AB40077A491 /* Convene: Wuwa */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Convene: Wuwa";
-			sourceTree = "<group>";
-		};
-		3514479B2C7C1AB60077A491 /* Convene: WuwaTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Convene: WuwaTests";
-			sourceTree = "<group>";
-		};
-		351447A52C7C1AB70077A491 /* Convene: WuwaUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Convene: WuwaUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -55,41 +44,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		351447952C7C1AB60077A491 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3514479F2C7C1AB60077A491 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3514477E2C7C1AB40077A491 = {
 			isa = PBXGroup;
 			children = (
+				3557A5072C831F9800B895E6 /* RepoRoot */,
+				3557A4812C8311B100B895E6 /* Packages */,
 				351447892C7C1AB40077A491 /* Convene: Wuwa */,
-				3514479B2C7C1AB60077A491 /* Convene: WuwaTests */,
-				351447A52C7C1AB70077A491 /* Convene: WuwaUITests */,
-				351447882C7C1AB40077A491 /* Products */,
+				3557A4F12C83150600B895E6 /* Convene: Wuwa.app */,
 			);
 			sourceTree = "<group>";
 		};
-		351447882C7C1AB40077A491 /* Products */ = {
+		3557A4812C8311B100B895E6 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				351447872C7C1AB40077A491 /* Convene: Wuwa.app */,
-				351447982C7C1AB60077A491 /* Convene: WuwaTests.xctest */,
-				351447A22C7C1AB70077A491 /* Convene: WuwaUITests.xctest */,
+				3557A4EE2C8313F800B895E6 /* WUHelper.swift */,
 			);
-			name = Products;
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		3557A5072C831F9800B895E6 /* RepoRoot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RepoRoot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,9 +79,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 351447AC2C7C1AB70077A491 /* Build configuration list for PBXNativeTarget "Convene: Wuwa" */;
 			buildPhases = (
+				3557A47A2C830F1000B895E6 /* SwiftFormat */,
 				351447832C7C1AB40077A491 /* Sources */,
 				351447842C7C1AB40077A491 /* Frameworks */,
 				351447852C7C1AB40077A491 /* Resources */,
+				3557A4DE2C83139600B895E6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -114,54 +96,8 @@
 			packageProductDependencies = (
 			);
 			productName = "Convene: Wuwa";
-			productReference = 351447872C7C1AB40077A491 /* Convene: Wuwa.app */;
+			productReference = 3557A4F12C83150600B895E6 /* Convene: Wuwa.app */;
 			productType = "com.apple.product-type.application";
-		};
-		351447972C7C1AB60077A491 /* Convene: WuwaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 351447AF2C7C1AB70077A491 /* Build configuration list for PBXNativeTarget "Convene: WuwaTests" */;
-			buildPhases = (
-				351447942C7C1AB60077A491 /* Sources */,
-				351447952C7C1AB60077A491 /* Frameworks */,
-				351447962C7C1AB60077A491 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3514479A2C7C1AB60077A491 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				3514479B2C7C1AB60077A491 /* Convene: WuwaTests */,
-			);
-			name = "Convene: WuwaTests";
-			packageProductDependencies = (
-			);
-			productName = "Convene: WuwaTests";
-			productReference = 351447982C7C1AB60077A491 /* Convene: WuwaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		351447A12C7C1AB60077A491 /* Convene: WuwaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 351447B22C7C1AB70077A491 /* Build configuration list for PBXNativeTarget "Convene: WuwaUITests" */;
-			buildPhases = (
-				3514479E2C7C1AB60077A491 /* Sources */,
-				3514479F2C7C1AB60077A491 /* Frameworks */,
-				351447A02C7C1AB60077A491 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				351447A42C7C1AB70077A491 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				351447A52C7C1AB70077A491 /* Convene: WuwaUITests */,
-			);
-			name = "Convene: WuwaUITests";
-			packageProductDependencies = (
-			);
-			productName = "Convene: WuwaUITests";
-			productReference = 351447A22C7C1AB70077A491 /* Convene: WuwaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,14 +112,6 @@
 					351447862C7C1AB40077A491 = {
 						CreatedOnToolsVersion = 16.0;
 					};
-					351447972C7C1AB60077A491 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 351447862C7C1AB40077A491;
-					};
-					351447A12C7C1AB60077A491 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 351447862C7C1AB40077A491;
-					};
 				};
 			};
 			buildConfigurationList = 351447822C7C1AB40077A491 /* Build configuration list for PBXProject "Convene: Wuwa" */;
@@ -196,13 +124,11 @@
 			mainGroup = 3514477E2C7C1AB40077A491;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 351447882C7C1AB40077A491 /* Products */;
+			productRefGroup = 3514477E2C7C1AB40077A491;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				351447862C7C1AB40077A491 /* Convene: Wuwa */,
-				351447972C7C1AB60077A491 /* Convene: WuwaTests */,
-				351447A12C7C1AB60077A491 /* Convene: WuwaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -215,58 +141,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		351447962C7C1AB60077A491 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		351447A02C7C1AB60077A491 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3557A47A2C830F1000B895E6 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		351447832C7C1AB40077A491 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		351447942C7C1AB60077A491 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3514479E2C7C1AB60077A491 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3557A4EF2C8313F800B895E6 /* WUHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3514479A2C7C1AB60077A491 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 351447862C7C1AB40077A491 /* Convene: Wuwa */;
-			targetProxy = 351447992C7C1AB60077A491 /* PBXContainerItemProxy */;
-		};
-		351447A42C7C1AB70077A491 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 351447862C7C1AB40077A491 /* Convene: Wuwa */;
-			targetProxy = 351447A32C7C1AB70077A491 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		351447AA2C7C1AB70077A491 /* Debug */ = {
@@ -326,6 +234,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -380,6 +289,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
@@ -389,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Convene: Wuwa/Convene__Wuwa.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Convene: Wuwa/Preview Content\"";
@@ -396,6 +307,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Convene--Wuwa-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -404,9 +317,11 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 17.1;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
@@ -414,10 +329,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wuwa.Convene--Wuwa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -428,6 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Convene: Wuwa/Convene__Wuwa.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Convene: Wuwa/Preview Content\"";
@@ -435,6 +352,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Convene--Wuwa-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -443,9 +362,11 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 17.1;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
@@ -453,100 +374,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wuwa.Convene--Wuwa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		351447B02C7C1AB70077A491 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FDD437X3NF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wuwa.Convene--WuwaTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Convene: Wuwa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Convene: Wuwa";
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		351447B12C7C1AB70077A491 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FDD437X3NF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wuwa.Convene--WuwaTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Convene: Wuwa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Convene: Wuwa";
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		351447B32C7C1AB70077A491 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FDD437X3NF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wuwa.Convene--WuwaUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = "Convene: Wuwa";
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		351447B42C7C1AB70077A491 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FDD437X3NF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wuwa.Convene--WuwaUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = "Convene: Wuwa";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -568,24 +400,6 @@
 			buildConfigurations = (
 				351447AD2C7C1AB70077A491 /* Debug */,
 				351447AE2C7C1AB70077A491 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		351447AF2C7C1AB70077A491 /* Build configuration list for PBXNativeTarget "Convene: WuwaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				351447B02C7C1AB70077A491 /* Debug */,
-				351447B12C7C1AB70077A491 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		351447B22C7C1AB70077A491 /* Build configuration list for PBXNativeTarget "Convene: WuwaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				351447B32C7C1AB70077A491 /* Debug */,
-				351447B42C7C1AB70077A491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

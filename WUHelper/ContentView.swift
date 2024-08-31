@@ -1,20 +1,20 @@
 //
 //  ContentView.swift
-//  Convene: Wuwa
+//  WUHelper
 //
-//  Created by Mila Masaya on 8/25/24.
+//  Created by Mila Masaya on 8/31/24.
 //
 
 import SwiftUI
-import Defaults
-import SFSafeSymbolls
 import SwiftData
 
 struct ContentView: View {
-    // MARK: Internal
-    @MainActor var body: some View {
+    @Environment(\.modelContext) private var modelContext
+    @Query private var items: [Item]
+
+    var body: some View {
         NavigationSplitView {
-            List{
+            List {
                 ForEach(items) { item in
                     NavigationLink {
                         Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
@@ -24,10 +24,12 @@ struct ContentView: View {
                 }
                 .onDelete(perform: deleteItems)
             }
-            .navigationSplitViewColumnWidth(min: 180, ideal:200)
             .toolbar {
-                Toolbaritem {
-                    button(action: additem) {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    EditButton()
+                }
+                ToolbarItem {
+                    Button(action: addItem) {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
@@ -37,14 +39,9 @@ struct ContentView: View {
         }
     }
 
-    // MARK: Private
-
-    @Environment(\.modelContext) private var modelContext
-    @Query private var irems: [Item]
-
     private func addItem() {
         withAnimation {
-            let new Item = Item(timestamp: Date())
+            let newItem = Item(timestamp: Date())
             modelContext.insert(newItem)
         }
     }
@@ -56,7 +53,9 @@ struct ContentView: View {
             }
         }
     }
-    #Preview
-        DemoContentView()
-        .modelContainer(for: Item.self, inMemory: true
-)
+}
+
+#Preview {
+    ContentView()
+        .modelContainer(for: Item.self, inMemory: true)
+}
